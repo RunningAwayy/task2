@@ -8,12 +8,12 @@ class Application
 {
     public function run(string $filename, string $outputFormat, string $outputFilePath)
     {
-        //арвперкнен
+        
         $converter = new Converter(/* ??? */);
 
         $file = new \SplFileObject($filename, 'r');
 
         $converter->convert($file, $outputFormat, $outputFilePath);
     }
-    public function bla(){}
+
 }
